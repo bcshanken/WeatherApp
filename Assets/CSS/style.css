@@ -1,0 +1,31 @@
+.navbar-light .navbar-text {
+  color: white;
+}
+.navbar {
+  text-align: center;
+  display: block;
+  margin-bottom:20px;
+
+}
+
+#citiesContainer{
+  background-color: lightgray;
+  min-height: 300px;
+  padding:15px;
+}
+#cityRow {
+  margin-left: 0;
+  margin-right:0;
+
+}
+#cityBlock {
+  margin-left: 0;
+  margin-right:0;
+  
+}
+#cityCol{
+  float: left;
+}
+#selectedCity{
+  position: block;
+}
