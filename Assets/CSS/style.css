@@ -23,7 +23,30 @@
   margin-right:0;
   
 }
-#cityCol{
+#forcastCol{
+  padding-left: 30px;
+}
+#cityDisplay{
+  border-style: solid;
+  border-color: lightgrey;
+  border-radius: 3px;
+  border-width: 1px;
+  padding-left: 10px;
+}
+
+.historyEl {
+  text-align: center;
+  width: 100%;
+  padding: 3px 0px;
+  margin: 3px 10px;
+  background-color:white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: slategray;
+  border-radius: 5px;
   
 }
-#selectedCity{}
+#fiveDay {
+  margin-left: 0;
+  margin-right: 0;
+}

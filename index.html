@@ -31,7 +31,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4" id="citiesContainer">
           <div class="row" id="cityBlock">
             <h4>Search for a city</h4>
             <form>
@@ -41,34 +41,39 @@
                   <input
                     type="text"
                     class="form-control mb-2"
-                    id="inlineFormInput"
+                    id="cityInput"
                     placeholder="Atlanta"
                   />
                 </div>
 
                 <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-2" id="cityButton">
+                  <button
+                    type="submit"
+                    class="btn btn-primary mb-2"
+                    id="cityButton"
+                  >
                     <i class="fas fa-search-location"></i>
                   </button>
                 </div>
               </div>
             </form>
           </div>
-          <div class="row">
-            <p>City list</p>
-          </div>
+          <div class="row" id="cityHistory"></div>
         </div>
 
-        <div class="col-sm-8">
-          <h2>Current City Date and weather icon</h2>
-          <ul>
-            <p id="temperature">90f</p>
-            <p id="humidity">41%</p>
-            <p id="windSpeed">4.7 MPH</p>
-            <p id="uv">9.49</p>
-          </ul>
-          <div class="row">
-            <p>Daily Weather</p>
+        <div class="col-sm-8" id="forcastCol">
+          <div id="cityDisplay">
+            <h2>Current City Date and weather icon</h2>
+            <ul>
+              <p id="temperature">90f</p>
+              <p id="humidity">41%</p>
+              <p id="windSpeed">4.7 MPH</p>
+              <p id="uv">9.49</p>
+            </ul>
+          </div>
+
+          <div class="row" id="fiveDay">
+            <h3>Five Day Forcast:</h3>
           </div>
           <div class="row">
             <div class="col-sm-2">
