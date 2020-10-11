@@ -24,8 +24,6 @@
   
 }
 #cityCol{
-  float: left;
+  
 }
-#selectedCity{
-  position: block;
-}
+#selectedCity{}
