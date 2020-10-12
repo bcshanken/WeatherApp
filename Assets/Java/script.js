@@ -27,9 +27,11 @@ $(document).ready(function() {
         cityList.push(newCity);
         console.log(cityList);
         renderCityList();
+        localStorage.setItem("savedCities", JSON.stringify(cityList));
       });
 
         //Function calls
         renderCityList();
 
+        
   });
