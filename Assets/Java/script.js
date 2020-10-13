@@ -3,7 +3,7 @@ $(document).ready(function () {
     // Dom Variables
     var newCity = "";
     var cityList = ["Philly", "San Fran"];
-    var selectedCity = "Atlanta";
+    var selectedCity = "";
     var selectedCityTemp = "";
     var selectedCityHumidity = "";
     var selectedCityWindSpeed = "";
@@ -51,8 +51,11 @@ $(document).ready(function () {
     
                 selectedCityUv = response.value;
                 console.log(selectedCityUv);
-                $("#Temperature").text("Temperature: " + )
-    
+                $("#cityDisplayed").text(selectedCity);
+                $("#temperature").text("Temperature: " + selectedCityTemp + " F");
+                $("#humidity").text("Humidity: " + selectedCityHumidity + " %");
+                $("#windSpeed").text("Wind Speed: " + selectedCityWindSpeed + " mph");
+                $("#uv").text("UV index: " + selectedCityUv);    
             });
         });
     }
@@ -68,11 +71,12 @@ $(document).ready(function () {
         console.log(cityList);
         renderCityList();
         localStorage.setItem("savedCities", JSON.stringify(cityList));
+        getCurrentData();
     });
 
     //Function calls
     renderCityList();
-    getCurrentData();
+    
 
 
 
