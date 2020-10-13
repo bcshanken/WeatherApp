@@ -25,6 +25,8 @@
 }
 #forcastCol{
   padding-left: 30px;
+  margin-top: 10px;
+  padding-right: 30px;
 }
 #cityDisplay{
   border-style: solid;
@@ -49,4 +51,14 @@
 #fiveDay {
   margin-left: 0;
   margin-right: 0;
+}
+#forcastCard{
+  background-color:  #0041C2;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightslategray;
+  border-radius: 10px;
+  margin: 5px;
+  color: white;
+  font-size: small;
 }
