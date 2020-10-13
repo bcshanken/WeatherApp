@@ -61,7 +61,7 @@ $(document).ready(function () {
         $("#temperature").text("Temperature: " + selectedCityTemp + " F");
         $("#humidity").text("Humidity: " + selectedCityHumidity + " %");
         $("#windSpeed").text("Wind Speed: " + selectedCityWindSpeed + " mph");
-        $("#uv").text("UV index: " + selectedCityUv);
+        $("#uv").text("UV Index: " + selectedCityUv);
       });
     });
   }
