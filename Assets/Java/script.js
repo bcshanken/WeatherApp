@@ -2,8 +2,7 @@ $(document).ready(function () {
   console.log("connected");
   // Dom Variables
   var newCity = "";
-  var cityList = JSON.parse(localStorage.getItem("savedCities"));
-  console.log(cityList);
+  var cityList = JSON.parse(localStorage.getItem("savedCities")) || [];
   var selectedCity = "";
   var selectedCityTemp = "";
   var selectedCityHumidity = "";
@@ -24,7 +23,7 @@ $(document).ready(function () {
     for (i = 0; i < cityList.length; i++) {
       console.log(cityList[i]);
       var newLiEl = $("<button>");
-      newLiEl.attr("id", "savedCity");
+      newLiEl.attr("id", cityList[i]);
       newLiEl.attr("class", "historyEl");
       newLiEl.attr("data-local", cityList[i]);
       newLiEl.text(cityList[i]);
@@ -136,8 +135,13 @@ $(document).ready(function () {
   });
 
   // Selecting from the saved Cities
-  $("#savedCity").on("click", function (event) {
+  $(document).on("click",".historyEl", function (event) {
     console.log("history button clicked");
+    var holdingCity = event.target.getAttribute("data-local");
+    console.log(holdingCity);
+    selectedCity=holdingCity;
+    getCurrentData();
+    forcastData();
   });
 
   //Function calls
