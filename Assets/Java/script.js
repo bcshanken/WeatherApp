@@ -46,7 +46,7 @@ $(document).ready(function () {
       selectedCityLong = response.coord.lon;
 
       var queryURLUv =
-        "http://api.openweathermap.org/data/2.5/uvi?lat=" +
+        "https://api.openweathermap.org/data/2.5/uvi?lat=" +
         selectedCityLat +
         "&lon=" +
         selectedCityLong +
