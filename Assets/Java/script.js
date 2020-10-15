@@ -45,7 +45,7 @@ $(document).ready(function () {
       selectedCityWindSpeed = response.wind.speed;
       selectedCityLat = response.coord.lat;
       selectedCityLong = response.coord.lon;
-
+      console.log(response);
       var queryURLUv =
         "https://api.openweathermap.org/data/2.5/uvi?lat=" +
         selectedCityLat +
